@@ -45,15 +45,14 @@
 <!-- /jumbotron -->
 
   </head>
-  <body>
-    <h1>WordCamp San Francisco</h1>
+  <body data-spy="scroll" data-target=".navbar" id="Home">
 
 	  <div class="container">
 		  <div class="container pt-4">
   <!-- about -->
   <div class="row">
    <div class="col-lg order-lg-2">
-	   				<h3 class="mb-4">About WordCamp</h3>
+	   				<h3 class="mb-4" id="About">About WordCamp</h3>
 		<img class="img-fluid rounded" src="sanfrancisco.jpg" alt="Photo of San Francisco, CA">
 <p>The beautiful city of San Francisco, CA will be the host city for WordCamp!</p>
 <p>Explore the future of WordPress with a lineup of industry professionals. Discover new techniques to advance your career as a web designer.</p>
@@ -67,20 +66,20 @@
     <div class="col-lg order-3">
       
 		<h3 class="mb-4">What You'll Learn</h3>
-<ul>
-  <li><strong>WordPress 5</strong>: New Gutenberg editor</li>
-  <li><strong>WooCommerce</strong>: E-commerce platform</li>
-  <li><strong>Hosting</strong>: Managed web hosting</li>
-  <li><strong>Themes</strong>: Creating your theme</li>
-  <li><strong>Plugins</strong>: Develop your plugin</li>
-  <li><strong>Content</strong>: Writing and podcasts</li>
-</ul>
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action"><strong>WordPress 5</strong>: New Gutenberg editor</a>
+  <a href="#" class="list-group-item list-group-item-action"><strong>WooCommerce</strong>: E-commerce platform</a>
+  <a href="#" class="list-group-item list-group-item-action"><strong>Hosting</strong>: Managed web hosting</a>
+  <a href="#" class="list-group-item list-group-item-action"><strong>Themes</strong>: Creating your theme</a>
+  <a href="#" class="list-group-item list-group-item-action"><strong>Plugins</strong>: Develop your plugin</a>
+  <a href="#" class="list-group-item list-group-item-action"><strong>Content</strong>: Writing and podcasts</a>
+</div>
 		
     </div>
 	  
   </div>
 <!-- speakers -->
-<h2 id="speakers" class="display-4 text-center my-5 text-muted">Speakers</h2>
+<h2 id="Speakers" class="display-4 text-center my-5 text-muted">Speakers</h2>
 <div class="row">
 <div class="col-md-6 col-lg-4">
 	  <div class="card mb-3">
@@ -140,9 +139,59 @@
 <!-- /speakers -->
 
 <!-- schedule -->
-<h1 class="display-4 text-center my-5 text-muted">Schedule</h1>
-[Conference schedule goes here]
-<!-- /speakers -->
+<h2 id="Schedule" class="display-4 text-center my-5 text-muted">Schedule</h2>
+<ul class="list-group">
+  <li class="list-group-item">
+    <div class="d-flex justify-content-between">
+      <h5 class="mb-1">Keynote: WordPress 5.0</h5>
+      <span class="badge badge-pill badge-secondary p-2">9:00am</span>
+    </div>
+    <p class="mb-1">Speaker Name</p>
+  </li>
+	  <li class="list-group-item">
+    <div class="d-flex justify-content-between">
+      <h5 class="mb-1">Keynote: WordPress 5.0</h5>
+      <span class="badge badge-pill badge-secondary p-2">9:00am</span>
+    </div>
+    <p class="mb-1">Speaker Name</p>
+  </li>
+	  <li class="list-group-item">
+    <div class="d-flex justify-content-between">
+      <h5 class="mb-1">Keynote: WordPress 5.0</h5>
+      <span class="badge badge-pill badge-secondary p-2">9:00am</span>
+    </div>
+    <p class="mb-1">Speaker Name</p>
+  </li>
+	  <li class="list-group-item">
+    <div class="d-flex justify-content-between">
+      <h5 class="mb-1">Keynote: WordPress 5.0</h5>
+      <span class="badge badge-pill badge-secondary p-2">9:00am</span>
+    </div>
+    <p class="mb-1">Speaker Name</p>
+  </li>
+	  <li class="list-group-item">
+    <div class="d-flex justify-content-between">
+      <h5 class="mb-1">Keynote: WordPress 5.0</h5>
+      <span class="badge badge-pill badge-secondary p-2">9:00am</span>
+    </div>
+    <p class="mb-1">Speaker Name</p>
+  </li>
+	  <li class="list-group-item">
+    <div class="d-flex justify-content-between">
+      <h5 class="mb-1">Keynote: WordPress 5.0</h5>
+      <span class="badge badge-pill badge-secondary p-2">9:00am</span>
+    </div>
+    <p class="mb-1">Speaker Name</p>
+  </li>
+	  <li class="list-group-item">
+    <div class="d-flex justify-content-between">
+      <h5 class="mb-1">Keynote: WordPress 5.0</h5>
+      <span class="badge badge-pill badge-secondary p-2">9:00am</span>
+    </div>
+    <p class="mb-1">Speaker Name</p>
+  </li>
+</ul>
+<!-- /schedule -->
   <!-- /about -->
 			  <!-- callout button -->
 <button type="button" class="btn btn-secondary btn-lg d-block mx-auto my-5">Don't Miss Out, Register Now</button> 
@@ -198,6 +247,28 @@
   </div>
 <!-- /footer -->  
 </div>
+		  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="register" data-toggle="modal" data-target="#register">Register for WordCamp Conference</h5>
+		  
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+	  <!-- /Modal -->	  
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
