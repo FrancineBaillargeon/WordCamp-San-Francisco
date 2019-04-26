@@ -1,0 +1,115 @@
+/* Variables */
+
+$wc-color-blue: #3813c2;
+$wc-color-pink: #c13ebc;
+
+/* Body */
+
+body {
+	background-color: $wc-color-blue;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Button */
+
+.btn {
+	border-radius: 0;
+}
+
+.btn-lg {
+	padding: 1rem 2rem;
+}
+
+/* Navbar */
+
+.navbar {
+	box-shadow: 7px 7px 7px 0 rgba(0, 0, 0, 0.08);
+	a.navbar-brand {
+		color: $wc-color-blue;
+	}
+	&.navbar-light {
+		.navbar-nav  {
+			.nav-link {
+				color: $wc-color-blue;
+				&.active {
+					color: $wc-color-pink;
+				}
+			}
+		}
+	} 
+}
+
+/* Hero */
+
+.jumbotron {
+	min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+	min-height: 100vh; /* These two lines are counted as one :-)       */
+	display: flex;
+	align-items: center;
+	background-color: transparent;
+	background-image: url("../img/pattern-geometric.svg");
+	background-repeat: repeat;
+	background-position: center center;
+	background-attachment: scroll;
+	background-size: auto;
+	z-index: 0;
+	margin-bottom: 5rem;
+	.container {
+		z-index: 1;
+		color: white;
+		h1 {
+			color: white;
+			font-weight: 800;
+			font-size: 10rem;
+			line-height: 10rem;
+			text-transform: uppercase;
+			margin-bottom: 2rem;
+		}
+		p {
+			color: white;
+		}
+	}
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: calc(100vh - 10rem);
+		width: 100%;
+		height: 10rem;
+		z-index: 1;
+		background-image: linear-gradient(180deg, rgba(56, 19, 194, 0) 0%, rgb(56, 19, 194) 100%);
+	}
+}
+
+/* SVG */
+
+.svg-separator {
+	display: block;
+	background: 0 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 9;
+	-webkit-transform: translateY(-100%) translateY(2px);
+	transform: translateY(-100%) translateY(2px);
+	width: 100%;
+	overflow: hidden;
+	.bottom {
+		top: auto;
+		bottom: 0;
+	}
+	.sep1 {
+		transform: translateY(-100%) translateY(2px) scale(1,1);
+		transform-origin: top;
+	}
+}
+
+/* About */
+
+.section-about {
+	position: relative;
+	z-index: 2;
