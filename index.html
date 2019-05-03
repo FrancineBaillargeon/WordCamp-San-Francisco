@@ -7,7 +7,11 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet" type="text/css">
+	  <link href="https://fonts.google.pis.com/css?family=Roboto" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+  </head>
+  <body data-spy="scroll" data-target=".navbar" id="home">
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <div class="container">
     <a class="navbar-brand order-1 mr-0" href="#" target="_blank">Presented by NVC</a>
@@ -28,7 +32,7 @@
         <li class="nav-item">
           <a class="nav-link" href="#schedule">Schedule</a>
         </li>
-      </div>
+      </ul>
     </div>
   </div>
 </nav>
@@ -41,19 +45,17 @@
   <button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#register">Register Now</button>
   <a class="btn btn-light btn-lg" href="#speakers">See Speakers</a>
 </div>
+		  </div>
+	  </div>
 <!-- /jumbotron -->
-
-  </head>
-  <body data-spy="scroll" data-target=".navbar" id="Home">
-	  <h1 class="display-4" data_temp_dwid="0"><strong data_temp_dwid="1">WordCamp San Francisco</strong></h1>
 
 	  <div class="container">
 		  <div class="container pt-4">
   <!-- about -->
   <div class="row">
    <div class="col-lg order-lg-2">
-	   				<h3 class="mb-4" id="About">About WordCamp</h3>
-		<img class="img-fluid rounded" src="sanfrancisco.jpg" alt="Photo of San Francisco, CA">
+	   				<h3 class="mb-4" id="about">About WordCamp</h3>
+		<img class="img-fluid rounded" src="img/sanfrancisco.jpg" alt="Photo of San Francisco, CA">
 <p>The beautiful city of San Francisco, CA will be the host city for WordCamp!</p>
 <p>Explore the future of WordPress with a lineup of industry professionals. Discover new techniques to advance your career as a web designer.</p>
     </div>
@@ -79,11 +81,11 @@
 	  
   </div>
 <!-- speakers -->
-<h2 id="Speakers" class="display-4 text-center my-5 text-muted">Speakers</h2>
+<h2 id="speakers" class="display-4 text-center my-5 text-muted">Speakers</h2>
 <div class="row">
 <div class="col-md-6 col-lg-4">
 	  <div class="card mb-3">
-  <img class="card-img-top" src="jill.jpg" alt="Speaker Name">
+  <img class="card-img-top" src="img/jill.jpg" alt="Speaker Name">
   <div class="card-body">
     <h4 class="card-title">Jill Palmer</h4>
     <p class="card-text">Recruited by two of the nation’s leading IT consulting firms to provide project management over large-scale, top-priority and complex technology initiatives, Jill has been a driving force in the tech industry for years.</p>
@@ -92,7 +94,7 @@
   </div>
 <div class="col-md-6 col-lg-4">
 	  <div class="card mb-3">
-  <img class="card-img-top" src="derek.jpg" alt="Speaker Name">
+  <img class="card-img-top" src="img/derek.jpg" alt="Speaker Name">
   <div class="card-body">
     <h4 class="card-title">Derek Wilson</h4>
     <p class="card-text">An innovator of next-generation solutions, systems and applications; Derek has given companies he has worked with a competitive edge and produced outstanding results for customers.</p>
@@ -101,7 +103,7 @@
   </div>
  <div class="col-md-6 col-lg-4">
 	  <div class="card mb-3">
-  <img class="card-img-top" src="julian.jpg" alt="Speaker Name">
+  <img class="card-img-top" src="img/julian.jpg" alt="Speaker Name">
   <div class="card-body">
     <h4 class="card-title">Julian Stewart</h4>
     <p class="card-text">Delivered industry-leading software that saved clients millions of dollars, shortened processes from weeks to minutes, captured #1 market share and generated up to $21M in annual revenues within year one of launch.</p>
@@ -110,7 +112,7 @@
   </div>
   <div class="col-md-6 col-lg-4">
 	  <div class="card mb-3">
-  <img class="card-img-top" src="rebeeca.jpg" alt="Speaker Name">
+  <img class="card-img-top" src="img/rebeeca.jpg" alt="Speaker Name">
   <div class="card-body">
     <h4 class="card-title">Rebecca Mori</h4>
     <p class="card-text">A trendsetter in moving between agile and waterfall approaches depending on project specifics and client goals. Rebecca is most strategic when designing detailed project road maps and work breakdown structures.</p>
@@ -119,7 +121,7 @@
   </div>
  <div class="col-md-6 col-lg-4">
 	  <div class="card mb-3">
-  <img class="card-img-top" src="abilene.jpg" alt="Speaker Name">
+  <img class="card-img-top" src="img/abilene.jpg" alt="Speaker Name">
   <div class="card-body">
     <h4 class="card-title">Abilene Parkens</h4>
     <p class="card-text">Has created over 21 fortune 500 company websites, as well as many B2C sites and several B2B site across multiple channels while streamlining functions by developing and implementing a task management ticket system.</p>
@@ -128,7 +130,7 @@
   </div>
 <div class="col-md-6 col-lg-4">
 	  <div class="card mb-3">
-  <img class="card-img-top" src="mark.jpg" alt="Speaker Name">
+  <img class="card-img-top" src="img/mark.jpg" alt="Speaker Name">
   <div class="card-body">
     <h4 class="card-title">Mark Lether</h4>
     <p class="card-text">Led design and multinational rollout of robust, scalable and secure electronic data interchange (EDI), enterprise resource planning (ERP) and point-of-sale (POS) systems for clients including AmEx, Citigroup and McDonald’s.</p>
@@ -139,7 +141,7 @@
 <!-- /speakers -->
 
 <!-- schedule -->
-<h2 id="Schedule" class="display-4 text-center my-5 text-muted">Schedule</h2>
+<h2 id="schedule" class="display-4 text-center my-5 text-muted">Schedule</h2>
 <ul class="list-group">
   <li class="list-group-item">
     <div class="d-flex justify-content-between">
@@ -283,7 +285,7 @@
     <label for="Email">Email:</label>
     <textarea class="form-control" id="Email" rows="1"></textarea>
   </div>
-		  <div><hr>Basic Information</hr></div>
+		  <div><hr>Basic Information</div>
 		 <div class="form-group">
     <label for="jobRole" rows="3">Job Role</label>
     <select multiple class="form-control" rows="4" id="exampleFormControlSelect2">
@@ -314,7 +316,7 @@
     CSS and JavaScript
   </label>
 </div>
-		  <div><hr>Credit Card Information</hr></div>
+		  <div><hr>Credit Card Information</div>
 	<div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputCardNumber">Card Number:</label>
@@ -376,7 +378,7 @@
   </div>
 </div>
 	  <!-- /Modal -->	  
-
+	  </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

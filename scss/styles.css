@@ -1,36 +1,85 @@
-/*
-Error: Invalid CSS after "	z-index: 2;": expected "}", was ""
-        on line 115 of /Users/francinebaillargeon/Documents/GitHub/WordCamp-San-Francisco/scss/styles.scss
+/* Variables */
+/* Body */
+body {
+  background-color: lightgray; }
 
-110: 
-111: /* About *\/
-112: 
-113: .section-about {
-114: 	position: relative;
-115: 	z-index: 2;
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Roboto', sans-serif; }
 
-Backtrace:
-/Users/francinebaillargeon/Documents/GitHub/WordCamp-San-Francisco/scss/styles.scss:115
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver CC 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/scss/parser.rb:1278:in `expected'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver CC 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/scss/parser.rb:1208:in `expected'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver CC 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/scss/parser.rb:1203:in `tok!'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver CC 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/scss/parser.rb:679:in `block'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver CC 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/scss/parser.rb:670:in `ruleset'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver CC 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/scss/parser.rb:696:in `block_child'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver CC 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/scss/parser.rb:689:in `block_contents'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver CC 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/scss/parser.rb:137:in `stylesheet'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver CC 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/scss/parser.rb:41:in `parse'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver CC 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/engine.rb:414:in `_to_tree'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver CC 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/engine.rb:290:in `render'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver CC 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:400:in `run'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver CC 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver CC 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/exec/base.rb:52:in `parse'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver CC 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/lib/sass/exec/base.rb:19:in `parse!'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver CC 2019.app/Contents/Resources/gems/rubygems/gems/sass-3.5.3/bin/sass:13:in `<top (required)>'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver CC 2019.app/Contents/Resources/gems/bin/sass:37:in `load'
-/Applications/Adobe Dreamweaver CC 2019/Adobe Dreamweaver CC 2019.app/Contents/Resources/gems/bin/sass:37:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"	z-index: 2;\": expected \"}\", was \"\"\A         on line 115 of /Users/francinebaillargeon/Documents/GitHub/WordCamp-San-Francisco/scss/styles.scss\A \A 110: \A 111: /* About */\A 112: \A 113: .section-about {\A 114: 	position: relative;\A 115: 	z-index: 2;"; }
+/* Button */
+.btn {
+  border-radius: 0; }
+
+.btn-lg {
+  padding: 1rem 2rem; }
+
+/* Navbar */
+.navbar {
+  box-shadow: 7px 7px 7px 0 rgba(0, 0, 0, 0.08); }
+  .navbar a.navbar-brand {
+    color: lightgray; }
+  .navbar.navbar-light .navbar-nav .nav-link {
+    color: lightgray; }
+    .navbar.navbar-light .navbar-nav .nav-link.active {
+      color: purple; }
+
+/* Hero */
+.jumbotron {
+  min-height: 100%;
+  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh;
+  /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  background-repeat: repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: auto;
+  z-index: 0;
+  margin-bottom: 5rem; }
+  .jumbotron .container {
+    z-index: 1;
+    color: black; }
+    .jumbotron .container h1 {
+      color: white;
+      font-weight: 800;
+      font-size: 10rem;
+      line-height: 10rem;
+      text-transform: uppercase;
+      margin-bottom: 2rem; }
+    .jumbotron .container p {
+      color: purple; }
+  .jumbotron:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc(100vh - 10rem);
+    width: 100%;
+    height: 10rem;
+    z-index: 1; }
+
+/* SVG */
+.svg-separator {
+  display: block;
+  background: 0 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 9;
+  -webkit-transform: translateY(-100%) translateY(2px);
+  transform: translateY(-100%) translateY(2px);
+  width: 100%;
+  overflow: hidden; }
+  .svg-separator .bottom {
+    top: auto;
+    bottom: 0; }
+  .svg-separator .sep1 {
+    transform: translateY(-100%) translateY(2px) scale(1, 1);
+    transform-origin: top; }
+
+/* About */
+.section-about {
+  position: relative;
+  z-index: 2; }

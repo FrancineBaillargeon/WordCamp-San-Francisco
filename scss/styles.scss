@@ -1,12 +1,12 @@
 /* Variables */
 
-$wc-color-blue: #3813c2;
-$wc-color-pink: #c13ebc;
+$wc-color-gray: lightgray;
+$wc-color-purple: purple;
 
 /* Body */
 
 body {
-	background-color: $wc-color-blue;
+	background-color: $wc-color-gray;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -28,14 +28,14 @@ h1, h2, h3, h4, h5, h6, p {
 .navbar {
 	box-shadow: 7px 7px 7px 0 rgba(0, 0, 0, 0.08);
 	a.navbar-brand {
-		color: $wc-color-blue;
+		color: $wc-color-gray;
 	}
 	&.navbar-light {
 		.navbar-nav  {
 			.nav-link {
-				color: $wc-color-blue;
+				color: $wc-color-gray;
 				&.active {
-					color: $wc-color-pink;
+					color: $wc-color-purple;
 				}
 			}
 		}
@@ -50,7 +50,6 @@ h1, h2, h3, h4, h5, h6, p {
 	display: flex;
 	align-items: center;
 	background-color: transparent;
-	background-image: url("../img/pattern-geometric.svg");
 	background-repeat: repeat;
 	background-position: center center;
 	background-attachment: scroll;
@@ -59,7 +58,7 @@ h1, h2, h3, h4, h5, h6, p {
 	margin-bottom: 5rem;
 	.container {
 		z-index: 1;
-		color: white;
+		color: black;
 		h1 {
 			color: white;
 			font-weight: 800;
@@ -69,7 +68,7 @@ h1, h2, h3, h4, h5, h6, p {
 			margin-bottom: 2rem;
 		}
 		p {
-			color: white;
+			color: purple;
 		}
 	}
 	&:after {
@@ -80,7 +79,6 @@ h1, h2, h3, h4, h5, h6, p {
 		width: 100%;
 		height: 10rem;
 		z-index: 1;
-		background-image: linear-gradient(180deg, rgba(56, 19, 194, 0) 0%, rgb(56, 19, 194) 100%);
 	}
 }
 
@@ -113,3 +111,4 @@ h1, h2, h3, h4, h5, h6, p {
 .section-about {
 	position: relative;
 	z-index: 2;
+}
